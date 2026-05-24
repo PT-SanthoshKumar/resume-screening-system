@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume Screening System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="input-panel">
+      <div class="brand-row">
+        <div>
+          <h1>Resume Screening System</h1>
+          <p>Rank candidates by role fit, matched skills, and missing skills.</p>
+        </div>
+        <button id="loadSampleBtn" type="button">Load Sample</button>
+      </div>
+
+      <label>
+        Job Role
+        <input id="roleInput" type="text" placeholder="Data Scientist">
+      </label>
+
+      <label>
+        Job Description
+        <textarea id="jobInput" rows="7" placeholder="Paste the job description here..."></textarea>
+      </label>
+
+      <div class="resume-toolbar">
+        <h2>Resumes</h2>
+        <button id="addResumeBtn" type="button">Add Resume</button>
+      </div>
+
+      <div id="resumeList" class="resume-list"></div>
+
+      <button id="rankBtn" class="primary" type="button">Rank Candidates</button>
+      <p id="statusText" class="status"></p>
+    </section>
+
+    <section class="results-panel">
+      <div class="results-header">
+        <h2>Candidate Ranking</h2>
+        <span id="resultCount">0 candidates</span>
+      </div>
+      <div id="results" class="results-empty">Submit resumes to see ranked candidates.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

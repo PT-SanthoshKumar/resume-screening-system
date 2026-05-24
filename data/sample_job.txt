@@ -1,0 +1,7 @@
+Role: Data Scientist
+
+We need a Data Scientist with Python, SQL, machine learning, statistics, pandas,
+scikit learn, data visualization, feature engineering, and model deployment
+experience. The candidate should communicate insights clearly and work with
+business teams to solve practical problems.
+
